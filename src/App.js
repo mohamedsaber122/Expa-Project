@@ -11,8 +11,8 @@ function App() {
   return (
     <>
       <Routes>
-        <Route path="/" element={<Volanter />} />
-        <Route path="/about" element={<div>hello</div>} />
+        <Route path="/" element={<> <NavBar /> <Body/> </>} />
+        <Route path="/about" element={<CreateProject/>} />
         <Route path="/data" element={<VolanterCustom />} />
       </Routes>
     </>
