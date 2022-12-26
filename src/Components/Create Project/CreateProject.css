@@ -1,0 +1,22 @@
+.left-content {
+  display: flex;
+  flex-direction: column;
+  width: 50%;
+}
+
+.main-content {
+  display: flex;
+  justify-content: center;
+}
+
+.left-content input {
+  width: 50%;
+  background-color: rgb(220, 220, 220);
+  border: 1px solid white;
+}
+
+.input-image {
+  background: url("../../Images/WhatsApp\ Image\ 2022-12-06\ at\ 22.33.32.jpg");
+  background-size: contain;
+  background-repeat: no-repeat;
+}

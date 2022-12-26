@@ -1,0 +1,36 @@
+.main-body {
+  padding-left: 100px;
+  padding-right: 100px;
+  padding-top: 150px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+}
+
+.main-body p {
+  width: 80%;
+  word-wrap: break-word;
+}
+
+.left-content {
+  display: flex;
+  flex-direction: column;
+  width: 70%;
+  gap: 20px;
+}
+.right-content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 30%;
+  gap: 20px;
+}
+.main-button {
+  width: 80%;
+}
+
+.right-content a {
+  text-decoration: none;
+  color: black;
+}

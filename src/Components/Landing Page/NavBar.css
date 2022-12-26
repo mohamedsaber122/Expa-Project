@@ -1,0 +1,27 @@
+img {
+  width: 150px;
+  height: 70px;
+}
+.main-nav {
+  display: flex;
+}
+.parent-nav {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  width: 100%;
+  gap: 15px;
+}
+
+.nav-links {
+  width: 30%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 15px;
+}
+
+.nav-links a {
+  text-decoration: none;
+  color: black;
+}
