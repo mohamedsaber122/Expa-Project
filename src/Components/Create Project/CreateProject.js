@@ -37,8 +37,9 @@ const CreateProject = () => {
             <input type="text" placeholder="Project country" />
           </div>
           <div className="right-content">
-            <h4>Upload project photo</h4>
-            <input type="file" className="input-image" />
+            {/* <h4>Upload project photo</h4>
+            <input type="file" className="input-image" /> */}
+            <img src="D:\Expa Project\src\Images\Add-Project.jpg" />
           </div>
         </div>
         <div
