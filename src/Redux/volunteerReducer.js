@@ -9,6 +9,12 @@ const initialState = {
       description:
         "The project aims to contribute to SDG #4 by  providing and openingspace for quality education for people of  all ages, ensuring  educational  opportunities from initial literacy to other subjects such as mathematics, science  and languages.",
     },
+    {
+      id: 2,
+      image: "https://pixlr.com/images/index/remove-bg.webp",
+      title: "el moza",
+      description: "hya gamda neekkkk",
+    },
   ],
   custom: {
     image: firstImage,

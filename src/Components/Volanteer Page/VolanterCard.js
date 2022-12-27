@@ -15,7 +15,7 @@ const VolanteCard = ({ image, title, description }) => {
       description: description,
     };
     dispatch(setCustom(data));
-    navigate("/data");
+    navigate("/projects");
   };
   return (
     <div>

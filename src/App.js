@@ -8,13 +8,16 @@ import { Routes, Route } from "react-router-dom";
 import VolanterCustom from "./Components/Volanteer Page/VolanterCustom";
 import SignUp from "./Components/Sign up/SignUp";
 import SignIn from "./Components/Sign in/SignIn";
+import ProjectDetails from "./Components/Project details/ProjectDetails";
 
 function App() {
   return (
     <>
       <Routes>
-        <Route path="/" element={ <Body />} />
-        <Route path="/about" element={<CreateProject/>} />
+        <Route path="/" element={<Volanter />} />
+        <Route path="/projects" element={<ProjectDetails />} />
+        <Route path="/about" element={<CreateProject />} />
+        <Route path="/sign-up" element={<SignUp />} />
         <Route path="/data" element={<VolanterCustom />} />
       </Routes>
     </>

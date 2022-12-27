@@ -10,7 +10,11 @@
   word-wrap: break-word;
   width: 50%;
 }
-
+.cards-container {
+  display: flex;
+  justify-content: space-evenly;
+  flex-wrap: wrap;
+}
 .card-image {
   height: 200px;
 }
