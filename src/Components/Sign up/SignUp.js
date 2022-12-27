@@ -12,16 +12,17 @@ const SignUp = () => {
   const [password, setPassword] = useState("");
   const [country, setCountry] = useState("");
   const handleClick = () => {
-    axios
-      .post("http://localhost:3001/registration", {
-        name: name,
-        email: email,
-        phoneNumber: phone,
-        password: password,
-        country: country,
-      })
-      .then((response) => console.log(response))
-      .catch((err) => console.log(err));
+    console.log("saber khawal");
+    // axios
+    //   .post("http://localhost:3001/registration", {
+    //     name: name,
+    //     email: email,
+    //     phoneNumber: phone,
+    //     password: password,
+    //     country: country,
+    //   })
+    //   .then((response) => console.log(response))
+    //   .catch((err) => console.log(err));
   };
   return (
     <div>
