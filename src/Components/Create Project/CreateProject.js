@@ -32,14 +32,14 @@ const CreateProject = () => {
             <h4>Add project fees</h4>
             <input type="text" placeholder="Project fees" />
             <h4>Add project time and date</h4>
-            <input type="date" />
+            <input type="text" />
             <h4>Add country</h4>
             <input type="text" placeholder="Project country" />
           </div>
           <div className="right-content">
             {/* <h4>Upload project photo</h4>
             <input type="file" className="input-image" /> */}
-            <img src="https://i.pinimg.com/736x/f4/17/e5/f417e50c89038b0b4b377fac5dcc44f4.jpg" />  
+            <img style={{width:'100%'}} src="https://i.pinimg.com/736x/f4/17/e5/f417e50c89038b0b4b377fac5dcc44f4.jpg" />  
           </div>
         </div>
         <div

@@ -6,12 +6,14 @@ import CreateProject from "./Components/Create Project/CreateProject";
 import Volanter from "./Components/Volanteer Page/Volanter";
 import { Routes, Route } from "react-router-dom";
 import VolanterCustom from "./Components/Volanteer Page/VolanterCustom";
+import SignUp from "./Components/Sign up/SignUp";
+import SignIn from "./Components/Sign in/SignIn";
 
 function App() {
   return (
     <>
       <Routes>
-        <Route path="/" element={<> <NavBar /> <Body/> </>} />
+        <Route path="/" element={ <Body />} />
         <Route path="/about" element={<CreateProject/>} />
         <Route path="/data" element={<VolanterCustom />} />
       </Routes>

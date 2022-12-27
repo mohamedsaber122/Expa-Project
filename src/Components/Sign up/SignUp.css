@@ -1,0 +1,29 @@
+.signup-main{
+    height: 100vh;
+    margin: 5%;
+}
+.signup-container{
+    margin-top: 50px;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    gap : 15px;
+    height: 80vh;
+    margin-top: 0px;
+}
+
+.signup-container p {
+    color : grey
+}
+.signup-container input{
+    width: 25%;
+    padding: 1% ;
+    height: 6%;
+    border: 0px;
+    background-color: 	#DCDCDC;
+}
+
+Button{
+    width: 25%;
+}
