@@ -39,7 +39,7 @@ const CreateProject = () => {
           <div className="right-content">
             {/* <h4>Upload project photo</h4>
             <input type="file" className="input-image" /> */}
-            <img src="D:\Expa Project\src\Images\Add-Project.jpg" />
+            <img src="https://i.pinimg.com/736x/f4/17/e5/f417e50c89038b0b4b377fac5dcc44f4.jpg" />  
           </div>
         </div>
         <div
