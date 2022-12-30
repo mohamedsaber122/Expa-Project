@@ -23,9 +23,10 @@ function App() {
             </>
           }
         />
-        <Route path="sign-in" element={<SignIn />} />
+        <Route path="/sign-in" element={<SignIn />} />
         <Route path="/applicants" element={<Applicants />} />
         <Route path="/projects" element={<ProjectDetails />} />
+        <Route path="/projects-main" element={<Volanter />} />
         <Route path="/about" element={<CreateProject />} />
         <Route path="/sign-up" element={<SignUp />} />
       </Routes>

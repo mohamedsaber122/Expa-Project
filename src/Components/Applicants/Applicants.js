@@ -1,8 +1,19 @@
-import React from "react";
+import axios from "axios";
+import React, { useEffect } from "react";
+import { useState } from "react";
 import NavBar from "../Landing Page/NavBar";
 import "./Applicants.css";
 
 const Applicants = () => {
+  const [data, setData] = useState();
+  useEffect(() => {
+    axios
+      .post("https://expa-server.onrender.com/getProject", {})
+      .then((response) => {
+        console.log(response);
+      })
+      .catch((err) => console.log(err));
+  });
   return (
     <div>
       <NavBar />

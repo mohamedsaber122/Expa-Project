@@ -1,3 +1,4 @@
+import axios from "axios";
 import React from "react";
 import { Button } from "react-bootstrap";
 import { useSelector } from "react-redux";
@@ -7,6 +8,10 @@ import "./ProjectDetails.css";
 
 const ProjectDetails = () => {
   const projectData = useSelector((state) => state.volunteer.custom);
+  const handleClick = () =>{
+    alert('hello')
+    
+  }
   return (
     <div>
       <NavBar />
@@ -33,6 +38,7 @@ const ProjectDetails = () => {
                 backgroundColor: "orange",
                 width: "fit-content",
               }}
+              onClick={handleClick}
             >
               Apply
             </Button>
