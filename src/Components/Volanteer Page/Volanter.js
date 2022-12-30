@@ -21,7 +21,7 @@ const Volanter = () => {
         setCards(response.data);
       })
       .catch((errr) => console.log(errr));
-  });
+  }, [setCards]);
   return (
     <div>
       <NavBar />
