@@ -8,10 +8,10 @@ import "./ProjectDetails.css";
 
 const ProjectDetails = () => {
   const projectData = useSelector((state) => state.volunteer.custom);
-  const handleClick = () =>{
-    alert('hello')
-    
-  }
+  const date = projectData.date.slice(0, 10);
+  const handleClick = () => {
+    alert("hello");
+  };
   return (
     <div>
       <NavBar />
@@ -24,7 +24,7 @@ const ProjectDetails = () => {
           <hr />
           <div className="projects-data">
             <p>Date</p>
-            <p>{projectData.date}</p>
+            <p>{date}</p>
           </div>
           <div className="projects-data">
             <p>Country</p>
