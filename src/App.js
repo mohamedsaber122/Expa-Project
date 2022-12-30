@@ -15,7 +15,16 @@ function App() {
   return (
     <>
       <Routes>
-        <Route path="/" element={<Volanter />} />
+        <Route
+          path="/"
+          element={
+            <>
+              <Body />
+              <NavBar />
+            </>
+          }
+        />
+        <Route path="sign-in" element={<SignIn />} />
         <Route path="/applicants" element={<Applicants />} />
         <Route path="/projects" element={<ProjectDetails />} />
         <Route path="/about" element={<CreateProject />} />
