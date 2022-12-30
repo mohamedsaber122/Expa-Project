@@ -20,7 +20,7 @@ const Volanter = () => {
         console.log(response);
         setCards(response.data);
       })
-      .catch((err) => console.log(err));
+      .catch((errr) => console.log(errr));
   });
   return (
     <div>
