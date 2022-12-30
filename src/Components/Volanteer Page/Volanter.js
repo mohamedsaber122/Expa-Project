@@ -33,14 +33,12 @@ const Volanter = () => {
           young talents with the global network of AIESEC
         </p>
         <div className="cards-container">
-          {cards.map((card) =>
-            card.map((d) => (
-              <VolanteCard
-                title={d.ProjectName}
-                description={d.ProjectDescription}
-              />
-            ))
-          )}
+          {cards.map((card) => (
+            <VolanteCard
+              title={card.ProjectName}
+              description={card.ProjectDescription}
+            />
+          ))}
         </div>
       </div>
     </div>
