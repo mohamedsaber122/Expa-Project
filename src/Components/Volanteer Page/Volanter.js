@@ -11,7 +11,7 @@ import axios from "axios";
 
 const Volanter = () => {
   const dispatch = useDispatch();
-  const [cards, setCards] = useState();
+  const [cards, setCards] = useState([]);
   useEffect(() => {
     alert("Signed in");
     axios
@@ -21,7 +21,7 @@ const Volanter = () => {
         setCards(response.data);
       })
       .catch((errr) => console.log(errr));
-  }, [setCards]);
+  }, []);
   return (
     <div>
       <NavBar />
