@@ -6,9 +6,10 @@ import { useDispatch } from "react-redux";
 import { setCustom } from "../../Redux/volunteerReducer";
 import { useNavigate } from "react-router-dom";
 import img from '../../Images/card-photo.jpg';
-const VolanteCard = ({  title, description }) => {
+const VolanteCard = ({ title, description }) => {
   const dispatch = useDispatch();
   const navigate = useNavigate();
+  
   const handleClick = () => {
     const data = {
       image : img,

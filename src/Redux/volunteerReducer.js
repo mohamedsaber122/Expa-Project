@@ -2,6 +2,11 @@ import { createSlice } from "@reduxjs/toolkit";
 import firstImage from "../Images/first-card.jpg";
 const initialState = {
   data: [],
+  custom: {
+    image: "",
+    title: "",
+    description: "",
+  },
 };
 
 const volunteerSlice = createSlice({
