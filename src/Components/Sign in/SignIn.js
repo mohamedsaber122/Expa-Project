@@ -11,10 +11,7 @@ const SignIn = () => {
   const handleSignIn = () => {
     alert("Hello");
     axios
-      .post("https://expa-server.onrender.com/adminSignin", {
-        email: email,
-        password: password,
-      })
+      .post("https://expa-server.onrender.com/getAdmin", {})
       .then((response) => {
         console.log(response);
       })
