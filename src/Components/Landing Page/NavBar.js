@@ -6,11 +6,11 @@ import Nav from "react-bootstrap/Nav";
 import Navbar from "react-bootstrap/Navbar";
 import NavDropdown from "react-bootstrap/NavDropdown";
 import { useDispatch } from "react-redux";
-import { Link } from "react-router-dom";
+import { Link, useNavigate } from "react-router-dom";
 import logo from "../../Images/WhatsApp Image 2022-12-06 at 21.31.12.jpg";
 import "./NavBar.css";
 const NavBar = () => {
-  const dispatch = useDispatch();
+  const navigate = useNavigate();
   return (
     <div>
       <div className="main-nav">
@@ -24,8 +24,8 @@ const NavBar = () => {
           <a className="links" href="#">
             About Us
           </a>
-          <Button onClick={() => dispatch("/sign-up")}>Sign Up</Button>
-          <Button onClick={() => dispatch("/sign-in")}>Sign In</Button>
+          <Button onClick={() => navigate("/sign-up")}>Sign Up</Button>
+          <Button onClick={() => navigate("/sign-in")}>Sign In</Button>
         </div>
       </div>
     </div>

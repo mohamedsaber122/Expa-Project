@@ -20,7 +20,6 @@ function App() {
           element={
             <>
               <Body />
-              <NavBar />
             </>
           }
         />
