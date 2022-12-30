@@ -6,7 +6,7 @@ import Card from "react-bootstrap/Card";
 import firstCard from "../../Images/first-card.jpg";
 import VolanteCard from "./VolanterCard";
 import { useDispatch, useSelector } from "react-redux";
-import { test } from "../../Redux/volunteerReducer";
+import { addData, test } from "../../Redux/volunteerReducer";
 import axios from "axios";
 
 const Volanter = () => {
@@ -18,7 +18,7 @@ const Volanter = () => {
       .post("https://expa-server.onrender.com/getProject", {})
       .then((response) => {
         console.log(response);
-        dispatch(response.data);
+        dispatch(addData(response.data));
       })
       .catch((err) => console.log(err));
   });
@@ -32,7 +32,7 @@ const Volanter = () => {
           recruiting in your local market. It is attainable and gives access to
           young talents with the global network of AIESEC
         </p>
-        {/* <div className="cards-container">
+        <div className="cards-container">
           {cards.map((card) =>
             card.map((d) => (
               <VolanteCard
@@ -41,7 +41,7 @@ const Volanter = () => {
               />
             ))
           )}
-        </div> */}
+        </div>
       </div>
     </div>
   );
