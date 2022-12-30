@@ -11,14 +11,14 @@ import axios from "axios";
 
 const Volanter = () => {
   const dispatch = useDispatch();
-  const cards = useSelector((state) => state.volunteer.data);
+  const [cards,setCards] = useState(); 
   useEffect(() => {
     alert("Signed in");
     axios
       .post("https://expa-server.onrender.com/getProject", {})
       .then((response) => {
         console.log(response);
-        dispatch(addData(response.data));
+        setCards(response.data)
       })
       .catch((err) => console.log(err));
   });
