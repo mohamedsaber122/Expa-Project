@@ -10,7 +10,7 @@ import { Link } from "react-router-dom";
 import logo from "../../Images/WhatsApp Image 2022-12-06 at 21.31.12.jpg";
 import "./NavBar.css";
 const NavBar = () => {
-  dispatch = useDispatch();
+  const dispatch = useDispatch();
   return (
     <div>
       <div className="main-nav">
