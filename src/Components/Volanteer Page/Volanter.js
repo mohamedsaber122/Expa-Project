@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React, { useEffect, useState } from "react";
 import NavBar from "../Landing Page/NavBar";
 import "./Volanter.css";
 import Button from "react-bootstrap/Button";
@@ -7,10 +7,20 @@ import firstCard from "../../Images/first-card.jpg";
 import VolanteCard from "./VolanterCard";
 import { useDispatch, useSelector } from "react-redux";
 import { test } from "../../Redux/volunteerReducer";
+import axios from "axios";
 
 const Volanter = () => {
   const cards = useSelector((state) => state.volunteer.data);
   const dispatch = useDispatch();
+
+  useEffect(() => {
+    axios
+      .post("https://expa-server.onrender.com/getProject", {})
+      .then((response) => {
+        console.log(response);
+      })
+      .catch((err) => console.log(err));
+  });
   return (
     <div>
       <NavBar />

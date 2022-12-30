@@ -33,7 +33,13 @@ const Applicants = () => {
               </div>
               <div className="applicants-data">
                 <i class="gg-add-r"></i>
-                <Link to='/create-project'> <span>Add project</span> </Link>
+                <Link
+                  style={{ textDecoration: "none", color: "black" }}
+                  to="/create-project"
+                >
+                  {" "}
+                  <span>Add project</span>{" "}
+                </Link>
               </div>
             </div>
             <div className="applicants-data-row">
