@@ -21,7 +21,7 @@ const Volanter = () => {
         setCards(response.data);
       })
       .catch((err) => console.log(err));
-    alert("Signed in");
+    setTimeout(() => {}, 3000);
   }, []);
   return (
     <div>
