@@ -5,12 +5,13 @@ import firstCard from "../../Images/first-card.jpg";
 import { useDispatch } from "react-redux";
 import { setCustom } from "../../Redux/volunteerReducer";
 import { useNavigate } from "react-router-dom";
-const VolanteCard = ({ image, title, description }) => {
+import img from '../../Images/card-photo.jpg';
+const VolanteCard = ({  title, description }) => {
   const dispatch = useDispatch();
   const navigate = useNavigate();
   const handleClick = () => {
     const data = {
-      image: image,
+      image : img,
       title: title,
       description: description,
     };
@@ -20,7 +21,7 @@ const VolanteCard = ({ image, title, description }) => {
   return (
     <div>
       <Card style={{ width: "18rem", backgroundColor: " rgb(245,245,245)" }}>
-        <Card.Img variant="top" src={image} className="card-image" />
+        <Card.Img variant="top" src={img} className="card-image" />
         <Card.Body style={{ width: "140%" }}>
           <Card.Title>{title} </Card.Title>
           <Card.Text className="card-text">{description}</Card.Text>

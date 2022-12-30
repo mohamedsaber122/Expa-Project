@@ -12,12 +12,13 @@ import axios from "axios";
 const Volanter = () => {
   const cards = useSelector((state) => state.volunteer.data);
   const dispatch = useDispatch();
-
+  const [data,setData] = useState();
   useEffect(() => {
     axios
       .post("https://expa-server.onrender.com/getProject", {})
       .then((response) => {
         console.log(response);
+        setData(response.data)
       })
       .catch((err) => console.log(err));
   });
@@ -32,11 +33,10 @@ const Volanter = () => {
           young talents with the global network of AIESEC
         </p>
         <div className="cards-container">
-          {cards.map((card) => (
+          {data.map((d) => (
             <VolanteCard
-              image={card.image}
-              title={card.title}
-              description={card.description}
+              title={d.ProjectName}
+              description={d.ProjectDescription}
             />
           ))}
         </div>
