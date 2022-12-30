@@ -10,16 +10,15 @@ import { test } from "../../Redux/volunteerReducer";
 import axios from "axios";
 
 const Volanter = () => {
-  const cards = useSelector((state) => state.volunteer.data);
   const dispatch = useDispatch();
-  const [data, setData] = useState();
+  const cards = useSelector((state) => state.volunteer.data);
   useEffect(() => {
     alert("Signed in");
     axios
       .post("https://expa-server.onrender.com/getProject", {})
       .then((response) => {
         console.log(response);
-        setData(response.data);
+        dispatch(response.data);
       })
       .catch((err) => console.log(err));
   });
@@ -34,12 +33,14 @@ const Volanter = () => {
           young talents with the global network of AIESEC
         </p>
         <div className="cards-container">
-          {data.map((d) => (
-            <VolanteCard
-              title={d.ProjectName}
-              description={d.ProjectDescription}
-            />
-          ))}
+          {cards.map((card) =>
+            card.map((d) => (
+              <VolanteCard
+                title={d.ProjectName}
+                description={d.ProjectDescription}
+              />
+            ))
+          )}
         </div>
       </div>
     </div>
