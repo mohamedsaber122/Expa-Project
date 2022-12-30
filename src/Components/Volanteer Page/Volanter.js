@@ -37,6 +37,9 @@ const Volanter = () => {
             <VolanteCard
               title={card.ProjectName}
               description={card.ProjectDescription}
+              fees = {card.ProjectFees}
+              date = {card.ProjectDate}
+              country = {card.country}
             />
           ))}
         </div>

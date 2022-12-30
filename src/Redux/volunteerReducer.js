@@ -6,6 +6,9 @@ const initialState = {
     image: "",
     title: "",
     description: "",
+    fees: "",
+    date: "",
+    country: "",
   },
 };
 
@@ -20,6 +23,9 @@ const volunteerSlice = createSlice({
       state.custom.image = action.payload.image;
       state.custom.title = action.payload.title;
       state.custom.description = action.payload.description;
+      state.custom.fees = action.payload.fees;
+      state.custom.date = action.payload.date;
+      state.custom.country = action.payload.country;
     },
     addData: (state, action) => {
       state.data = action.payload;

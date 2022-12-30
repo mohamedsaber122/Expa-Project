@@ -5,16 +5,19 @@ import firstCard from "../../Images/first-card.jpg";
 import { useDispatch } from "react-redux";
 import { setCustom } from "../../Redux/volunteerReducer";
 import { useNavigate } from "react-router-dom";
-import img from '../../Images/card-photo.jpg';
-const VolanteCard = ({ title, description }) => {
+import img from "../../Images/card-photo.jpg";
+const VolanteCard = ({ title, description, fees, date, country }) => {
   const dispatch = useDispatch();
   const navigate = useNavigate();
-  
+
   const handleClick = () => {
     const data = {
-      image : img,
+      image: img,
       title: title,
       description: description,
+      fees: fees,
+      date: date,
+      country: country,
     };
     dispatch(setCustom(data));
     navigate("/projects");

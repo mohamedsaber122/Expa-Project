@@ -24,14 +24,14 @@ const ProjectDetails = () => {
           <hr />
           <div className="projects-data">
             <p>Date</p>
-            <p>2000-12-24</p>
+            <p>{projectData.date}</p>
           </div>
           <div className="projects-data">
             <p>Country</p>
-            <p>Egypt</p>
+            <p>{projectData.country} </p>
           </div>
           <div className="projects-fees">
-            <h3>90$</h3>
+            <h3>{projectData.fees}$</h3>
             <Button
               style={{
                 color: "white",
