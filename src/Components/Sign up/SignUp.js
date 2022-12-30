@@ -4,6 +4,7 @@ import { Button } from "react-bootstrap";
 import NavBar from "../Landing Page/NavBar";
 import { useState } from "react";
 import "./SignUp.css";
+import { useNavigate } from "react-router";
 
 const SignUp = () => {
   const [name, setName] = useState("");
@@ -11,8 +12,28 @@ const SignUp = () => {
   const [phone, setPhone] = useState("");
   const [password, setPassword] = useState("");
   const [country, setCountry] = useState("");
+  const navigate = useNavigate();
   const handleClick = () => {
-    console.log("saber khawal");
+    alert("Anything");
+
+    axios
+      .post("https://expa-server.onrender.com/registration", {
+        name: name,
+        email: email,
+        phoneNumber: phone,
+        password: password,
+        country: country,
+      })
+      .then((response) => {
+        if (response.data == "New User Saved!") {
+          alert("User added successufly");
+          navigate("/");
+        } else {
+          alert("error while sign up");
+        }
+      })
+      .catch((err) => console.log(err));
+
     // axios
     //   .post("http://localhost:3001/registration", {
     //     name: name,

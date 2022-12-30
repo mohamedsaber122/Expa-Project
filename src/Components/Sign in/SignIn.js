@@ -11,8 +11,6 @@ const SignIn = () => {
   const [isAdmin, setIsAdmin] = useState(false);
   const navigate = useNavigate();
   const handleSignIn = () => {
-    alert("Hello");
-
     if (email == "admin" && password == "admin") {
       axios
         .post("https://expa-server.onrender.com/adminSignin", {
@@ -31,8 +29,6 @@ const SignIn = () => {
     } else {
       navigate("/projects-main");
     }
-
-    console.log("Tessstttt");
   };
 
   return (
