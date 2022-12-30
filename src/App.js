@@ -29,6 +29,7 @@ function App() {
         <Route path="/projects-main" element={<Volanter />} />
         <Route path="/about" element={<CreateProject />} />
         <Route path="/sign-up" element={<SignUp />} />
+        <Route path="/create-project" element={<CreateProject />} />
       </Routes>
     </>
   );

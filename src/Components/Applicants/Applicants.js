@@ -2,6 +2,7 @@ import axios from "axios";
 import React, { useEffect } from "react";
 import { useState } from "react";
 import NavBar from "../Landing Page/NavBar";
+import { Link } from "react-router-dom";
 import "./Applicants.css";
 
 const Applicants = () => {
@@ -32,7 +33,7 @@ const Applicants = () => {
               </div>
               <div className="applicants-data">
                 <i class="gg-add-r"></i>
-                <span>Add project</span>
+                <Link to='/create-project'> <span>Add project</span> </Link>
               </div>
             </div>
             <div className="applicants-data-row">
