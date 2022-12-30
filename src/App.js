@@ -20,7 +20,6 @@ function App() {
         <Route path="/projects" element={<ProjectDetails />} />
         <Route path="/about" element={<CreateProject />} />
         <Route path="/sign-up" element={<SignUp />} />
-        <Route path="/data" element={<VolanterCustom />} />
       </Routes>
     </>
   );
