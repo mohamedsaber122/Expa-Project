@@ -18,6 +18,7 @@ const volunteerSlice = createSlice({
     },
     addData: (state, action) => {
       state.data = action.payload;
+      console.log(state.data);
     },
   },
 });
