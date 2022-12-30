@@ -11,17 +11,18 @@ import axios from "axios";
 
 const Volanter = () => {
   const dispatch = useDispatch();
-  const [cards,setCards] = useState(); 
+  const [cards, setCards] = useState();
   useEffect(() => {
     alert("Signed in");
     axios
       .post("https://expa-server.onrender.com/getProject", {})
       .then((response) => {
         console.log(response);
-        setCards(response.data)
+        setCards(response.data);
       })
       .catch((err) => console.log(err));
-  },[]);
+    alert("Signed in");
+  }, []);
   return (
     <div>
       <NavBar />
