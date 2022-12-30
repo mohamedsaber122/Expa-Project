@@ -32,7 +32,7 @@ const Volanter = () => {
           recruiting in your local market. It is attainable and gives access to
           young talents with the global network of AIESEC
         </p>
-        <div className="cards-container">
+        {/* <div className="cards-container">
           {cards.map((card) =>
             card.map((d) => (
               <VolanteCard
@@ -41,7 +41,7 @@ const Volanter = () => {
               />
             ))
           )}
-        </div>
+        </div> */}
       </div>
     </div>
   );
