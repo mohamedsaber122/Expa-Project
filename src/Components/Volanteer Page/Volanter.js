@@ -13,6 +13,7 @@ const Volanter = () => {
   const dispatch = useDispatch();
   const [cards, setCards] = useState();
   useEffect(() => {
+    setTimeout(() => {}, 5000);
     alert("Signed in");
     axios
       .post("https://expa-server.onrender.com/getProject", {})
@@ -21,7 +22,7 @@ const Volanter = () => {
         setCards(response.data);
       })
       .catch((err) => console.log(err));
-    setTimeout(() => {}, 3000);
+    setTimeout(() => {}, 5000);
   }, []);
   return (
     <div>
