@@ -11,24 +11,20 @@ const SignIn = () => {
   const [isAdmin, setIsAdmin] = useState(false);
   const navigate = useNavigate();
   const handleSignIn = () => {
-    if (email == "admin" && password == "admin") {
-      axios
-        .post("https://expa-server.onrender.com/getAdmin", {
-          email: email,
-          password: password,
-        })
-        .then((response) => {
-          console.log(response);
-          if (response.data == "Admin signin !") {
-            navigate("/applicants");
-          } else {
-            console.log("error");
-          }
-        })
-        .catch((err) => console.log(err));
-    } else {
-      navigate("/projects-main");
-    }
+    axios
+      .post("https://expa-server.onrender.com/adminSignin", {
+        email: email,
+        password: password,
+      })
+      .then((response) => {
+        console.log(response);
+        if (response.data == "Admin signin !") {
+          navigate("/applicants");
+        } else {
+          console.log("error");
+        }
+      })
+      .catch((err) => console.log(err));
   };
 
   return (
