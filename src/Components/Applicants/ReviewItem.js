@@ -4,15 +4,15 @@ const ReviewItem = ({ name, email, phone }) => {
   return (
     <div className="item-main">
       <div className="item">
-        <label>Name :</label>
+        <p>Name :</p>
         <p>{name}</p>
       </div>
       <div className="item">
-        <label>Email :</label>
+        <p>Email :</p>
         <p>{email}</p>
       </div>
       <div className="item">
-        <label>Phone number :</label>
+        <p>Phone number :</p>
         <p>{phone}</p>
       </div>
       <hr />
