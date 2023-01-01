@@ -10,6 +10,7 @@ import SignUp from "./Components/Sign up/SignUp";
 import SignIn from "./Components/Sign in/SignIn";
 import ProjectDetails from "./Components/Project details/ProjectDetails";
 import Applicants from "./Components/Applicants/Applicants";
+import ApplicantsReview from "./Components/Applicants/ApplicantsReview";
 
 function App() {
   return (
@@ -20,11 +21,13 @@ function App() {
           element={
             <>
               <Body />
+              {/* <ApplicantsReview /> */}
             </>
           }
         />
         <Route path="/sign-in" element={<SignIn />} />
         <Route path="/applicants" element={<Applicants />} />
+        <Route path="/applicants-review" element={<ApplicantsReview />} />
         <Route path="/projects" element={<ProjectDetails />} />
         <Route path="/projects-main" element={<Volanter />} />
         <Route path="/about" element={<CreateProject />} />

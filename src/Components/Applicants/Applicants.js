@@ -29,7 +29,12 @@ const Applicants = () => {
                   className="far fa-address-book"
                   style={{ fontSize: "23px" }}
                 ></i>{" "}
-                <span>Applicants</span>
+                <Link
+                  style={{ textDecoration: "none", color: "black" }}
+                  to="/applicants-review"
+                >
+                  <span>Applicants</span>
+                </Link>
               </div>
               <div className="applicants-data">
                 <i class="gg-add-r"></i>

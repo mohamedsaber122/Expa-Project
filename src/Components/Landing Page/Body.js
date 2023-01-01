@@ -18,10 +18,15 @@ const Body = () => {
           </p>
         </div>
         <div className="right-content">
-          <a href="#">Sign In</a>
-          <Button className="main-button">Login With Facebook </Button>
-          <a href="#">Sign Up with email</a>
-          <Button className="main-button">Donate </Button>
+          <Link to="/sign-in">
+            {" "}
+            <a href="#">Sign In</a>{" "}
+          </Link>
+          <Link to="/sign-up">
+            {" "}
+            <a href="#">Sign Up with email</a>{" "}
+          </Link>
+          <Button className="main-button">Donate</Button>
         </div>
       </div>
     </div>

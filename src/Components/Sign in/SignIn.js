@@ -23,7 +23,6 @@ const SignIn = () => {
         } else {
           navigate("/projects-main");
         }
-        alert("User not found");
       })
       .catch((err) => console.log(err));
   };
