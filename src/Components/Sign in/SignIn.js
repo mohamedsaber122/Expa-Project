@@ -18,7 +18,7 @@ const SignIn = () => {
       })
       .then((response) => {
         console.log(response);
-        if (response.data == "admin") {
+        if (response.data.status == "admin") {
           navigate("/applicants");
         } else {
           navigate("/projects-main");
