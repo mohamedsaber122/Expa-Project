@@ -1,11 +1,11 @@
 .item-main {
   display: flex;
   justify-content: space-evenly;
-  flex-wrap: wrap;
 }
 
 .item {
   padding: 5%;
+  display: flex;
 }
 .item p {
   margin: 3%;

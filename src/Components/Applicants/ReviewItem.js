@@ -12,7 +12,7 @@ const ReviewItem = ({ name, email, phone }) => {
         <p>{email}</p>
       </div>
       <div className="item">
-        <label>Phone number</label>
+        <label>Phone number :</label>
         <p>{phone}</p>
       </div>
       <hr />
