@@ -21,11 +21,13 @@ const ApplicantsReview = () => {
       <div className="review-main">
         <h2>Applicants Review</h2>
         <div className="review-items">
-          {data.map((item) =>
-            item.map((i) => (
-              <ReviewItem email={i.email} name={i.name} phone={i.phoneNumber} />
-            ))
-          )}
+          {data.map((item) => (
+            <ReviewItem
+              email={item.email}
+              name={item.name}
+              phone={item.phoneNumber}
+            />
+          ))}
         </div>
       </div>
     </div>
