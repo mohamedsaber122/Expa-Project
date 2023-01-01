@@ -17,7 +17,7 @@ const ReviewItem = ({ name, email, phone }) => {
           <p>{phone}</p>
         </div>
       </div>
-      <hr style={{ width: "80%" }} />
+      <hr />
     </>
   );
 };
