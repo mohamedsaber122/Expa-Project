@@ -11,6 +11,7 @@ import SignIn from "./Components/Sign in/SignIn";
 import ProjectDetails from "./Components/Project details/ProjectDetails";
 import Applicants from "./Components/Applicants/Applicants";
 import ApplicantsReview from "./Components/Applicants/ApplicantsReview";
+import AboutUs from "./Components/About us/AboutUs";
 
 function App() {
   return (
@@ -21,7 +22,7 @@ function App() {
           element={
             <>
               <Body />
-              {/* <ApplicantsReview /> */}
+              
             </>
           }
         />
@@ -33,6 +34,7 @@ function App() {
         <Route path="/about" element={<CreateProject />} />
         <Route path="/sign-up" element={<SignUp />} />
         <Route path="/create-project" element={<CreateProject />} />
+        <Route path="/about-us" element={<AboutUs />} />
       </Routes>
     </>
   );
