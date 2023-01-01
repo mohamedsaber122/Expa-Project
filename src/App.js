@@ -12,6 +12,7 @@ import ProjectDetails from "./Components/Project details/ProjectDetails";
 import Applicants from "./Components/Applicants/Applicants";
 import ApplicantsReview from "./Components/Applicants/ApplicantsReview";
 import AboutUs from "./Components/About us/AboutUs";
+import Donation from "./Components/Donation/Donation";
 
 function App() {
   return (
@@ -22,7 +23,6 @@ function App() {
           element={
             <>
               <Body />
-              
             </>
           }
         />
@@ -35,6 +35,7 @@ function App() {
         <Route path="/sign-up" element={<SignUp />} />
         <Route path="/create-project" element={<CreateProject />} />
         <Route path="/about-us" element={<AboutUs />} />
+        <Route path="/dontaion" element={<Donation />} />
       </Routes>
     </>
   );
