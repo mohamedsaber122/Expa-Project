@@ -20,11 +20,10 @@ const SignIn = () => {
         console.log(response);
         if (response.data.status == "admin") {
           navigate("/applicants");
-        } else if (response.data.status == "user") {
-          navigate("/projects-main");
         } else {
-          alert("User not found");
+          navigate("/projects-main");
         }
+        alert("User not found");
       })
       .catch((err) => console.log(err));
   };
