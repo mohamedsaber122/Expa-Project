@@ -13,7 +13,7 @@ const SignIn = () => {
   const handleSignIn = () => {
     if (email == "admin" && password == "admin") {
       axios
-        .post("https://expa-server.onrender.com/adminSignin", {
+        .post("https://expa-server.onrender.com/getAdmin", {
           email: email,
           password: password,
         })

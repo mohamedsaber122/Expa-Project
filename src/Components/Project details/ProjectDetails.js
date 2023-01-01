@@ -10,7 +10,7 @@ const ProjectDetails = () => {
   const projectData = useSelector((state) => state.volunteer.custom);
   const date = projectData.date.slice(0, 10);
   const handleClick = () => {
-    alert("hello");
+    alert("Applied!");
   };
   return (
     <div>

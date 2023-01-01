@@ -15,7 +15,7 @@ const CreateProject = () => {
   const [country, setCountry] = useState("");
   const navigate = useNavigate();
   const handleSubmit = () => {
-    alert("Hello");
+
     axios
       .post("https://expa-server.onrender.com/addProject", {
         ProjectName: name,
