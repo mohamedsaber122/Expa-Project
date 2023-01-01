@@ -27,7 +27,7 @@ const Body = () => {
             {" "}
             <a href="#">Sign Up with email</a>{" "}
           </Link>
-          <Button onClick={() => navigate("/")} className="main-button">
+          <Button onClick={() => navigate("/donation")} className="main-button">
             Donate
           </Button>
         </div>
