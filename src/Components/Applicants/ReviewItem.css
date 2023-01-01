@@ -11,4 +11,6 @@
   align-items: center;
   min-width: 450px;
 }
-
+.item p {
+  margin: 0px;
+}
