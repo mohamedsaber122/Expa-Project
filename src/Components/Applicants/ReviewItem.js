@@ -16,6 +16,9 @@ const ReviewItem = ({ name, email, phone }) => {
           <p>Phone number :</p>
           <p>{phone}</p>
         </div>
+        <div className="item">
+          <input type="checkbox" /> <label>Reviewed</label>
+        </div>
       </div>
       <hr />
     </>
