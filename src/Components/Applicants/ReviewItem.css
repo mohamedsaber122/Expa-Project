@@ -6,6 +6,8 @@
 .item {
   padding: 5%;
   display: flex;
+  justify-content: center;
+  align-items: center;
 }
 .item p {
   margin: 3%;
