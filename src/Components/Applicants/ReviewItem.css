@@ -1,0 +1,12 @@
+.item-main {
+  display: flex;
+  justify-content: space-evenly;
+  flex-wrap: wrap;
+}
+
+.item {
+  padding: 5%;
+}
+.item p {
+  margin: 3%;
+}

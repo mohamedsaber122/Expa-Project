@@ -21,6 +21,7 @@ const ApplicantsReview = () => {
       <div className="review-main">
         <h2>Applicants Review</h2>
         <div className="review-items">
+          <hr></hr>
           {data.map((item) => (
             <ReviewItem
               email={item.email}
