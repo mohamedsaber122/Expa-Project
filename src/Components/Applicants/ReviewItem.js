@@ -6,18 +6,26 @@ const ReviewItem = ({ name, email, phone }) => {
       <div className="item-main">
         <div className="item">
           <p>Name :</p>
-          <p><b> {name} </b></p>
+          <p>
+            <b> {name} </b>
+          </p>
         </div>
         <div className="item">
           <p>Email :</p>
-          <p>{email}</p>
+          <p><b> {email} </b></p>
         </div>
         <div className="item">
           <p>Phone number :</p>
-          <p>{phone}</p>
+          <p> <b>{phone} </b></p>
         </div>
-        <div className="item check">
-          <div><input type="checkbox" /> </div> <div> <label>Reviewed</label> </div>
+        <div className="item">
+          <div>
+            <input type="checkbox" />{" "}
+          </div>{" "}
+          <div>
+            {" "}
+            <label>Reviewed</label>{" "}
+          </div>
         </div>
       </div>
       <hr />
