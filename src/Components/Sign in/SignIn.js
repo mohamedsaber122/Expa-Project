@@ -12,7 +12,7 @@ const SignIn = () => {
   const navigate = useNavigate();
   const handleSignIn = () => {
     axios
-      .post("https://expa-server.onrender.com/adminSignin", {
+      .post("https://expa-server.onrender.com/getAdmin", {
         email: email,
         password: password,
       })
