@@ -9,7 +9,7 @@
   display: flex;
   justify-content: center;
   align-items: center;
-  min-width: 450px;
+  min-width: 300px;
 }
 .item p {
   margin: 0px;
