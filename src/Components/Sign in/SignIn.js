@@ -18,10 +18,10 @@ const SignIn = () => {
       })
       .then((response) => {
         console.log(response);
-        if (response.data == "Admin signin !") {
+        if (response.data == "admin") {
           navigate("/applicants");
         } else {
-          console.log("error");
+          navigate("/projects-main");
         }
       })
       .catch((err) => console.log(err));
