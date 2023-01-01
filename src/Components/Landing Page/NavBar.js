@@ -24,8 +24,6 @@ const NavBar = () => {
           <a className="links" href="#">
             About Us
           </a>
-          <Button onClick={() => navigate("/sign-up")}>Sign Up</Button>
-          <Button onClick={() => navigate("/sign-in")}>Sign In</Button>
         </div>
       </div>
     </div>
