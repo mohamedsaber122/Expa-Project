@@ -7,8 +7,11 @@ import NavBar from "../Landing Page/NavBar";
 import "./ProjectDetails.css";
 
 const ProjectDetails = () => {
+    // retrieve project data from the global state
   const projectData = useSelector((state) => state.volunteer.custom);
+   // extract the date from the project data and slice the string to only get the first 10 characters (YYYY-MM-DD)
   const date = projectData.date.slice(0, 10);
+   // function to handle the click event of the apply button
   const handleClick = () => {
     alert("Applied!");
   };

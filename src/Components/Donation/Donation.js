@@ -6,11 +6,16 @@ import { Button } from "react-bootstrap";
 import axios from "axios";
 import { useNavigate } from "react-router";
 const Donation = () => {
+    // state variables for managing form input
   const [name, setName] = useState("");
   const [email, setEmail] = useState("");
   const [phone, setPhone] = useState("");
   const [amount, setAmount] = useState("");
+    // function for navigating to different routes  
   const navigate = useNavigate();
+ // function to handle the form submission
+  // sends a post request to the server with the form input data
+  // displays an alert and navigates to the home page upon successful submission
 
   const handleClick = () => {
     axios

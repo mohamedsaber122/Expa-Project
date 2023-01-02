@@ -6,7 +6,10 @@ import { Link } from "react-router-dom";
 import "./Applicants.css";
 
 const Applicants = () => {
+    // state variable to store the data retrieved from the server
   const [data, setData] = useState();
+    // useEffect hook to perform an effect when the component mounts
+  // sends a post request to the server to retrieve project data
   useEffect(() => {
     axios
       .post("https://expa-server.onrender.com/getProject", {})

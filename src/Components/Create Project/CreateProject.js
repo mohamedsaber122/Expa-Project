@@ -8,12 +8,17 @@ import imageBackground from "../../Images/WhatsApp Image 2022-12-06 at 22.33.32.
 import axios from "axios";
 import { useNavigate } from "react-router";
 const CreateProject = () => {
+    // state variables for managing form input
   const [name, setName] = useState("");
   const [description, setDescription] = useState("");
   const [fees, setFees] = useState("");
   const [date, setDate] = useState("");
   const [country, setCountry] = useState("");
+    // function for navigating to different routes
   const navigate = useNavigate();
+    // function to handle the form submission
+  // sends a post request to the server with the form input data
+  // displays an alert and navigates to the applicants page upon successful submission, or displays an error if something went wrong
   const handleSubmit = () => {
 
     axios

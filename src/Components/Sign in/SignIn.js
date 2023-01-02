@@ -6,10 +6,15 @@ import NavBar from "../Landing Page/NavBar";
 import "./SignIn.css";
 
 const SignIn = () => {
+    // state variables for managing form input
   const [email, setEmail] = useState("");
   const [password, setPassword] = useState("");
   const [isAdmin, setIsAdmin] = useState(false);
+    // function for navigating to different routes
   const navigate = useNavigate();
+ // function to handle sign in form submission
+  // sends a post request to the server with the form input data
+  // navigates to different routes based on the response from the server
   const handleSignIn = () => {
     axios
       .post("https://expa-server.onrender.com/getAdmin", {

@@ -4,7 +4,11 @@ import NavBar from "../Landing Page/NavBar";
 import "./ApplicantsReview.css";
 import ReviewItem from "./ReviewItem";
 const ApplicantsReview = () => {
+    // state variable to store the data retrieved from the server
   const [data, setData] = useState([]);
+  // useEffect hook to perform an effect when the component mounts
+  // sends a post request to the server to retrieve user data
+  // updates the data state variable with the response from the server
   useEffect(() => {
     axios
       .post("https://expa-server.onrender.com/getUser", {})
